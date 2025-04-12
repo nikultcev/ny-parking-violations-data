@@ -1,0 +1,7 @@
+numpy
+pandas
+requests
+google
+pandas_gbq
+dbt-core
+dbt-bigquery

@@ -1,0 +1,5 @@
+models:
+  - name: staging_violations
+    config:
+      alias: violations
+      materialized: view

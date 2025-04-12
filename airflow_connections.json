@@ -1,0 +1,14 @@
+{
+    "Google": {
+        "conn_type": "google_cloud_platform",
+        "extra": {
+            "key_path": "/opt/airflow/plugins/secrets/gcp_credentials.json"
+        }
+    },
+    "Google-BigQuery": {
+        "conn_type": "gcpbigquery",
+        "extra": {
+            "key_path": "/opt/airflow/plugins/secrets/gcp_credentials.json"
+        }
+    }
+}
