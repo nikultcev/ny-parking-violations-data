@@ -1,7 +1,5 @@
 import pandas as pd
 from airflow.providers.google.cloud.hooks.bigquery import BigQueryHook
-from google.oauth2 import service_account
-import json
 from pandas_gbq import to_gbq
 import os
 
