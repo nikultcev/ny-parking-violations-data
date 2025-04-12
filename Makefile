@@ -7,6 +7,7 @@ export
 all: create-venv install terraform-init terraform-apply docker-build docker-up
 windows: create-venv-windows install-windows terraform-init terraform-apply docker-build docker-up
 
+#Try different python or python3 depending on your installation
 create-venv:
 	@echo "Creating virtual environment..."
 	python3 -m venv .venv
@@ -42,6 +43,7 @@ terraform-apply:
 		-var="google_project=$(GOOGLE_PROJECT)" \
 		-var="google_cloud_storage_bucket=$(GOOGLE_CLOUD_STORAGE_BUCKET)"
 
+#You can test dbt models separately
 dbt-test:
 	cd dbt && dbt seed && dbt test
 

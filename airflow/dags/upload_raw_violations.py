@@ -66,6 +66,7 @@ def taskflow():
     ):
         delete(file_name)
 
+    #After every run we trigger dbt models to have actual data materialized for Looker
     run_dbt = TriggerDagRunOperator(
         task_id='run_dbt',
         trigger_dag_id='run_dbt_models',
